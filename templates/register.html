@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-xs-4">
+    </div>
+    <div class="col-xs-4">
+        <applet>Все поля обязательны для регистрации</applet>
+        <form role="form" method="POST" action="/register" onsubmit="return validateForm(this);">
+            <div class="form-group">
+                <label>FirstName</label>
+                <input type="text" class="form-control" id="first" name="first" placeholder="Ваше Имя" />
+                <small id="firstDesc"></small>
+            </div>
+            <div class="form-group">
+                <label>LastName</label>
+                <input type="text" class="form-control" id="last" name="last" placeholder="Ваша Фамилия" />
+                <small id="lastDesc"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="email" />
+                <small id="emailDesc"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" class="form-control" id="age" name="age"  title="Возраст"/>
+                <small id="ageDesc"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control edinfopass" id="password" name="password" />
+
+            </div>
+
+            <div class="form-group">
+                <label>Password Retry</label>
+                <input type="password" class="form-control edinfopass" id="password2" name="password2" />
+                <small id="validpass"></small>
+            </div>
+
+            <button type="submit" class="btn btn-default">Отправить</button>
+        </form>
+    </div>
+    <div class="col-xs-4">
+    </div>
+</div>
+<script src="/static/js/registration.js"></script>

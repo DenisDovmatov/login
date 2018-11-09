@@ -1,0 +1,21 @@
+<div>
+
+    <div class="row">
+        <div class="col-xs-4 grey-container">
+        </div>
+        <div class="col-xs-4">
+        {{if $.Authorized}}
+            <h1>Профиль</h1>
+            <h2>Имя:{{ $.First }}</h2>
+            <h2>Фамилия:{{ $.Last }}</h2>
+            <h2>Почтовый ящик:{{ $.Email }}</h2>
+            <h2>Возраст:{{ $.Age }}</h2>
+        {{else}}
+            <h1>No Auth</h1>
+        {{end}}
+        </div>
+        <div class="col-xs-4 grey-container">
+        </div>
+    </div>
+
+</div>
